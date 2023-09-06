@@ -73,9 +73,9 @@ function sendMail(){
 
     emailjs.send('service_ul6h72u', 'template_0tf8h2q', templateParams)
     .then(function(response) {
-       alert('SUCCESS!', response.status, response.text);
+       alert('The email has been sent succesfully', response.status, response.text);
     }, function(error) {
-       alert('FAILED...', error);
+       alert('The email has Failed to send', error);
     });
 
     // resets form after succesfully sended the message
